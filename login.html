@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Info</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #5c5555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            display: flex;
+            width: 80%;
+            height: 60%;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .left-side {
+            width: 40%;
+            background-color: #fff;
+        }
+
+        .left-side img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .right-side {
+            width: 60%;
+            background-color: #3498db; /* Blue rectangle */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"],
+        .login-form input[type="submit"] {
+            width: 80%;
+            margin: 5px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .login-form input[type="submit"] {
+            background-color: #2980b9;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="left-side">
+            <div class="image-container">
+                <img src="Studentlogin.jpeg" alt="Image">
+            </div>
+        </div>
+        <div class="right-side">
+            <h2>User Information</h2>
+            <form class="login-form" action="setup.php" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
